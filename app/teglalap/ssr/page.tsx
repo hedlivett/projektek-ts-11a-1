@@ -9,13 +9,14 @@ type SearchParams = {
   b?: string;
 };
 
-export default async function TeglalapPage({ searchParams }: { searchParams: SearchParams }) {
-  const params = await searchParams; // ez egy Promise, ezért várjuk meg az értékét
-  let a: number = params.a ? Number(params.a) : 3; // ha nincs paraméter, akkor legyen 3
-  let b: number = params.b ? Number(params.b) : 4; // ha nincs paraméter, akkor legyen 4
+export default async function TeglalapPage(params: { searchParams: {a ? : string, b?:string}}) {
+  const p = await params.searchParams; // ez egy Promise, ezért várjuk meg az értékét
+  let a: number = p.a ? Number(p.a) : 3; // ha nincs paraméter, akkor legyen 3
+  let b: number = p.b ? Number(p.b) : 4; // ha nincs paraméter, akkor legyen 4
   a = isNaN(a) ? 5 : a; // ha nem alakítható számra, akkor legyen 5
   b = isNaN(b) ? 6 : b; // ha nem alakítható számra, akkor legyen 6
 
+  //union típus használata 
   let terület: number | undefined = undefined;
   let kerület: number | undefined = undefined;
 
