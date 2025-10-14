@@ -13,6 +13,7 @@ const links: TLink[] = [
   { id: 3, href: "/teglalap/csr", label: "Téglalap KT - CSR" },
   { id: 4, href: "/haromszog", label: "Háromszög T-K" },
   { id: 5, href: "/use-effect-demo", label: "useEffect demo " },
+  { id: 6, href: "/baratsagos-szamparok", label: "Barátságos számpárok" },
 ];
 
 export default function Home() {
@@ -46,3 +47,5 @@ export default function Home() {
 //   );
 // };
 // export default Home;
+
+//dogával megvárjuk a skóciásokat
