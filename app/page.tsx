@@ -14,6 +14,7 @@ const links: TLink[] = [
   { id: 4, href: "/haromszog", label: "Háromszög T-K" },
   { id: 5, href: "/use-effect-demo", label: "useEffect demo " },
   { id: 6, href: "/baratsagos-szamparok", label: "Barátságos számpárok" },
+  { id: 7, href: "/flexbox", label: "Flexbox" },
 ];
 
 export default function Home() {
